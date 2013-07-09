@@ -1,0 +1,12 @@
+
+<h1>Gazouilli</h1>
+
+<form action="/" method="post">
+	<input type="text" name="tweet" placeholder="tweet here">
+</form>
+
+<ul>
+<% @tweets.each do |t| %>
+	<li><%= t.text %></li>
+<% end %>
+</ul>
